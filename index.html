@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuk Kita Jawab</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
+    />
+
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <nav id="mobile-nav">
+      <a href="./index.html" class="material-icons active"> home </a>
+      <a href="./profil.html" class="material-icons-outlined">
+        account_circle
+      </a>
+      <a href="./buat_pertanyaan.html" class="material-icons-outlined">
+        rate_review
+      </a>
+      <a href="./search.html" class="material-icons-outlined"> search </a>
+      <a href="./mapel.html" class="material-icons-outlined"> category </a>
+    </nav>
+
+    <div class="layout">
+      <aside class="left">
+        <nav id="side-nav">
+          <div class="flex">
+            <img src="gambar/logo.jpg" alt="Logo" />
+            <h3>Yuk Kita Jawab</h3>
+          </div>
+
+          <a href="./index.html" class="text-box flex active">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+          <a href="./profil.html" class="text-box flex">
+            <i class="material-icons">account_circle</i>
+            Profil
+          </a>
+          <a href="./search.html" class="text-box flex">
+            <i class="material-icons-outlined">search</i>
+            Search
+          </a>
+          <a href="./mapel.html" class="text-box flex">
+            <i class="material-icons-outlined">category</i>
+            Mata Pelajaran
+          </a>
+          <a href="./admin.html" class="text-box flex">
+            <i class="material-icons-outlined">monitor</i>
+            Dashboard Admin
+          </a>
+
+          <a href="./buat_pertanyaan.html">
+            <button class="sekunder flex">
+              <i class="material-icons-outlined">rate_review</i>
+              Buat Pertanyaan
+            </button>
+          </a>
+        </nav>
+      </aside>
+      <main>
+        <h1>
+          <span style="color: var(--primer)">Selamat </span>
+          <span style="color: var(--sekunder)">Datang </span> 👋
+        </h1>
+
+        <h4>Mapel paling populer minggu ini</h4>
+        <div class="mapel">
+          <a class="text-box flex">
+            <img src="gambar/mtk.png" alt="ikon mata pelajaran Matematika" />
+            <b>Matematika</b>
+            <span>20+ pertanyaan</span>
+          </a>
+          <a class="text-box flex">
+            <img src="gambar/ips.png" alt="ikon mata pelajaran IPS" />
+            <b>IPS</b>
+            <span>18+ pertanyaan</span>
+          </a>
+        </div>
+
+        <h4>Pertanyaan trending minggu ini</h4>
+
+        <article>
+          <div class="tags flex">
+            <span>IPS</span>
+            <span>Kelas 6</span>
+            <span>+5 poin</span>
+          </div>
+          <a href="./pertanyaan.html">
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </a>
+
+          <div class="flex">
+            <div class="poster flex">
+              <img
+                src="https://ui-avatars.com/api/?name=M+T&size=120&bold=true&color=ffffff&background=A50AB3"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a href="./profil.html">Nama Pengguna</a>
+                <p>5 hari lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="flex">
+                <i class="material-icons-outlined">thumb_up</i>
+                15
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">forum</i>
+                23
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="tags flex">
+            <span>Seni Budaya</span>
+            <span>Kelas 4</span>
+            <span>+3 poin</span>
+          </div>
+          <a href="./pertanyaan.html">
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </a>
+
+          <div class="flex">
+            <div class="poster flex">
+              <img
+                src="https://ui-avatars.com/api/?name=R+M&size=120&bold=true&color=ffffff&background=546E1D"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>3 hari lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="flex">
+                <i class="material-icons-outlined">thumb_up</i>
+                11
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">forum</i>
+                16
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="tags flex">
+            <span>IPA</span>
+            <span>Kelas 6</span>
+            <span>+4 poin</span>
+          </div>
+
+          <img
+            src="./gambar/buku.png"
+            alt="gambar pertanyaan"
+            id="via-gambar"
+          />
+
+          <a href="./pertanyaan.html">
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </a>
+          <div class="flex">
+            <div class="poster flex">
+              <img
+                src="https://ui-avatars.com/api/?name=A+C&size=120&bold=true&color=ffffff&background=145062"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>4 hari lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="flex">
+                <i class="material-icons-outlined">thumb_up</i>
+                8
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">forum</i>
+                4
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <br />
+        <h1>
+          <span style="color: var(--primer)">Jadilah Pertama </span>
+          <span style="color: var(--sekunder)">yang Menjawab </span>✍️
+        </h1>
+        <h4>Pertanyaan terbaru</h4>
+
+        <article>
+          <div class="tags flex">
+            <span>Matematika</span>
+            <span>Kelas 6</span>
+            <span>Belum Dijawab</span>
+            <span>+12 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+          <div class="flex">
+            <div class="poster flex">
+              <img
+                src="https://ui-avatars.com/api/?name=I+K&size=120&bold=true&color=ffffff&background=BD3E54"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>2 menit lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="flex">
+                <i class="material-icons-outlined">thumb_up</i>
+                0
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">forum</i>
+                0
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="tags flex">
+            <span>Pendidikan Agama</span>
+            <span>Kelas 5</span>
+            <span>Belum Dijawab</span>
+            <span>+8 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+          <div class="flex">
+            <div class="poster flex">
+              <img
+                src="https://ui-avatars.com/api/?name=F+L&size=120&bold=true&color=ffffff&background=17398C"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>17 menit lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="flex">
+                <i class="material-icons-outlined">thumb_up</i>
+                0
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">forum</i>
+                0
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="tags flex">
+            <span>IPS</span>
+            <span>Kelas 4</span>
+            <span>Belum Dijawab</span>
+            <span>+9 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+          <div class="flex">
+            <div class="poster flex">
+              <img
+                src="https://ui-avatars.com/api/?name=Z+E&size=120&bold=true&color=ffffff&background=D651F9"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>30 menit lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="flex">
+                <i class="material-icons-outlined">thumb_up</i>
+                0
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">forum</i>
+                0
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <br />
+        <br />
+        <br />
+        <br />
+      </main>
+      <aside class="right">
+        <div class="fixed">
+          <div class="flex">
+            <a href="./login.html" class="button">Login</a>
+            <a href="./daftar.html" class="button sekunder">Daftar</a>
+          </div>
+
+          <h5>Pertanyaan Trending</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <h5>Pertanyaan Terbaru</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuk Kita Jawab</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
+    />
+    <link rel="stylesheet" href="styles/buat_pertanyaan.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+  <body>
+    <nav id="mobile-nav">
+      <a href="./index.html" class="material-icons-outlined"> home </a>
+      <a href="./profil.html" class="material-icons-outlined">
+        account_circle
+      </a>
+      <a href="./buat_pertanyaan.html" class="material-icons-outlined">
+        rate_review
+      </a>
+      <a href="./search.html" class="material-icons-outlined"> search </a>
+      <a href="./mapel.html" class="material-icons-outlined"> category </a>
+    </nav>
+
+    <div class="layout">
+      <aside class="left">
+        <nav id="side-nav">
+          <div class="flex">
+            <img src="gambar/logo.jpg" alt="Logo" />
+            <h3>Yuk Kita Jawab</h3>
+          </div>
+
+          <a href="./index.html" class="text-box flex">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+          <a href="./profil.html" class="text-box flex">
+            <i class="material-icons">account_circle</i>
+            Profil
+          </a>
+          <a href="./search.html" class="text-box flex">
+            <i class="material-icons-outlined">search</i>
+            Search
+          </a>
+          <a href="./mapel.html" class="text-box flex">
+            <i class="material-icons-outlined">category</i>
+            Mata Pelajaran
+          </a>
+          <a href="./admin.html" class="text-box flex">
+            <i class="material-icons-outlined">monitor</i>
+            Dashboard Admin
+          </a>
+
+          <a href="./buat_pertanyaan.html">
+            <button class="sekunder flex">
+              <i class="material-icons-outlined">rate_review</i>
+              Buat Pertanyaan
+            </button>
+          </a>
+        </nav>
+      </aside>
+      <main>
+        <form>
+          <h1>
+            <span style="color: var(--primer)">Buat </span>
+            <span style="color: var(--sekunder)">Pertanyaan </span> ✏️
+          </h1>
+
+          <label for="judul">Judul</label>
+          <div class="input-container">
+            <i class="material-icons-outlined">edit</i>
+            <input
+              type="text"
+              name="judul"
+              id="judul"
+              autocomplete="off"
+              placeholder="Mengapa diperlukan riset sebelum membuat... (contoh)"
+            />
+          </div>
+
+          <label for="judul">Detail</label>
+          <textarea
+            type="text"
+            name="judul"
+            id="judul"
+            autocomplete="off"
+            placeholder="Tambahkan deskripsi atau keterangan lebih lanjut mengenai pertanyaanmu"
+          ></textarea>
+
+          <br />
+          <label class="media">
+            <i class="material-icons-outlined">image</i>
+            <span>Upload Media</span>
+            <input type="file" name="gambar" id="gambar" accept=".JPG,.PNG" />
+          </label>
+          <br />
+
+          <div class="grid">
+            <div>
+              <label for="mapel">Mata Pelajaran</label>
+              <select name="mapel" id="mapel">
+                <option selected>Semua Mapel</option>
+                <option>Matematika</option>
+                <option>Penjaskes</option>
+                <option>IPS</option>
+                <option>Bahasa Indonesia</option>
+                <option>IPA</option>
+                <option>Bahasa Inggris</option>
+                <option>PKN</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div>
+              <label for="tingkat">Kelas</label>
+              <select name="tingkat" id="tingkat">
+                <option selected>Semua Tingkat</option>
+                <option>Kelas 1</option>
+                <option>Kelas 2</option>
+                <option>Kelas 3</option>
+                <option>Kelas 4</option>
+                <option>Kelas 5</option>
+                <option>Kelas 6</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="button">Post Pertanyaan</button>
+        </form>
+
+        <br />
+        <br />
+        <br />
+        <br />
+      </main>
+      <aside class="right">
+        <div class="fixed">
+          <div class="flex">
+            <a href="./login.html" class="button">Login</a>
+            <a href="./daftar.html" class="button sekunder">Daftar</a>
+          </div>
+
+          <h5>Pertanyaan Trending</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <h5>Pertanyaan Terbaru</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
